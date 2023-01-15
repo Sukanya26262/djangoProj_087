@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+<head>
+<title>Digital Business Technology Program</title>
+<link rel="stylesheet" type="text/css" href="{% static 'stylesheets/bootstrap523/css/bootstrap.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'stylesheets/fontawesome621/css/all.css' %}">
+<script src="{% static 'stylesheets/bootstrap523/js/bootstrap.js' %}"></script>
+</head>
+<body>
+
+{% block sidebar %}
+<nav class="navbar navbar-dark " style="background-color: #2B3A55" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="{% static 'images/logo.png' %}" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+      Digital Business Application Programming
+    </a>
+  </div>
+</nav>
+{% endblock %}
+<div class="row">
+<div class="col-lg-3" style="background-color: #E8C4C4;">
+{% include 'menu.html' %}
+</div>
+<div class="col-lg-9" style="background-color: #CE7777" >
+<br>
+{% block content %}
+{% endblock %}
+</div>
+</div>
+</div>
+</body>
+</html>
