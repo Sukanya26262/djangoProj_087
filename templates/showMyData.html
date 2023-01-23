@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <br>
+    <div class="container bg-white fthai rounded  " style="max-width: max-content;">
+  <div class="row">
+    <div class="col">
+      <h4 >รหัสนักศึกษา : {{ studentid }} </h4>
+    <h4 > ชื่อ-สกุล : {{ fullname }}</h4>
+    <h4> ชื่อเล่น : {{ nickname }}</h4>
+    <h4 > อายุ : {{ age }}</h4>
+    <h4 > รหัสบัตรประชาชน :{{ cardid }}</h4>
+    </div>
+    <div class="col">
+       <h4>  เพศ : {{ gender }}</h4>
+    <h4 > สิ่งที่ชอบ : {{ favorite }}</h4>
+    <h4 > อาชีพ : {{ career }}</h4>
+    <h4 >  อาหารโปรด : {{ favoritefood }}</h4>
+    <h4 > อาหารที่ไม่ชอบ : {{ Dislikedfood }}</h4>
+    </div>
+    <br>
+      <br>
+      <h3 class=" text-center text-bg-secondary"> รายการสินค้า</h3>
+    <table class="table table-warning table-striped table-responsive ">
+        <tr>
+            <th>Product </th><th>Price </th><th>Images </th>
+        </tr>
+
+        {% for product in products %}
+            <tr>
+                <td>{{ product.0 }}</td>
+                <td class="text">{{ product.1 }}</td>
+                <td><img src="{% static product.2 %} " width="50px" height="50px"> </td>
+
+            </tr>
+        {% endfor %}
+    </table>
+
+  </div>
+    </div>
+{% endblock %}

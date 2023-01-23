@@ -1,30 +1,55 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
-<h2 class="text-white align-items-center" ><i class="fa-solid fa-user-graduate" style="color: black"></i> ประวัติการศึกษา </h2>
-<table class="table " style="background-color: #F2E5E5">
-<tr>
-<th width="30%">ระดับ</th>
-<th width="35%">สถานที่</th>
-    <th width="35%">สาขา</th>
-</tr>
-<tr>
-<td>  ประกาศนีย์บัตรวิชาชีพ (ปวช.)
-</td>
-<td>วิทยาลัยอาชีวศึกษาอุดรธานี</td>
-    <td>คอมพิวเตอร์ธุรกิจ</td>
-</tr>
-    <tr>
-<td>ประกาศนีย์บัตรวิชาชีพชั้นสูง (ปวส.)</td>
-        <td>วิทยาลัยเทคนิคอุดรธานี</td>
-        <td>นักพัฒนาซอร์ฟแวร์คอมพิวเตอร์</td>
-</tr>
-<tr>
-<td>ปัจจุบันกำลังศึกษา ปริญญาตรี</td>
-<td>มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตขอนแก่น</td>
-    <td>ระบบสารสนเทศ</td>
-</tr>
-
-
-</table>
-<br><br><br>
+<div class="container-fluid fthai ">
+<div class="row  g-4 b  ">
+     <div class="col">
+         <div class="card  mb-4">
+          <h2 class="card-title ms-4"  style="color: #0081B4"><b>  ประวัติการศึกษา</b></h2>
+             </div>
+     </div>
+</div>
+<div class="row row-cols-1 row-cols-md-2 g-4 b  ">
+  <div class="col">
+    <div class="card">
+      <img src=" {%  static 'images/sc1.png' %} " class="card-img-top  responsive"  alt="...">
+      <div class="card-body">
+        <h2 class="card-title ">โรงเรียนเทศบาล1 โพศรี</h2>
+        <h3 class="card-text">ระดับประถมศึกษา</h3>
+          <h3 class="card-text">2551-2556</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{%  static 'images/sc2.png' %}" class="card-img-top responsive" alt="...">
+      <div class="card-body">
+        <h2 class="card-title">โรงเรียนอุดรพิชัยรักษ์พิทยา</h2>
+        <h3 class="card-text">ระดับมัธยมศึกษา</h3>
+          <h3 class="card-text">2557-2559</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+    <img src="{%  static 'images/sc3.png' %}" class="card-img-top responsive" alt="...">
+      <div class="card-body">
+        <h2 class="card-title">วิทยาลัยอาชีวศึกษาอุดรธานี</h2>
+        <h3 class="card-text">ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</h3>
+          <h3 class="card-text">2560-2562</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{%  static 'images/sc4.png' %}" class="card-img-top responsive" alt="...">
+      <div class="card-body">
+        <h2 class="card-title">วิทยาลัยเทคนิคอุดรธานี</h2>
+        <h3 class="card-text">ระดับประกาศนียบัตรวิชาชีพขั้นสูง (ปวส.)</h3>
+          <h3 class="card-text">2563-2565</h3>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
 {% endblock %}

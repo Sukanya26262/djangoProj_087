@@ -1,32 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<h2 class="text-white align-items-center" ><i class="fa-solid fa-user" style="color: black"></i> ประวัติส่วนตัว </h2>
-<table class="table " style="background-color: #F2E5E5">
-<tr>
-<td width="11%"></td>
-<td width="89%">นางสาวสุกัญญา ชินคำ</td>
-</tr>
-    <tr>
-<td width="11%">ชื่อ-สกุล :</td>
-<td width="89%">นางสาวสุกัญญา ชินคำ</td>
-</tr>
-<tr>
-<td>ชื่อเล่น :</td>
-<td>อ้อน</td>
-</tr>
-    <tr>
-<td>วันเดือนปีเกิด :</td> <td>13 กันยายน พ.ศ.2544</td>
-</tr>
-<tr>
-<td>ที่อยู่ :</td>
-<td>บ้านเลขที่ 24 บ้านเชียนพิณ  จังหวัด อุดรธานี 41000</td>
-</tr>
-<tr>
-<td>เบอร์โทรศัพท์ : </td>
-<td> 062 814 4456</td>
-</tr>
-
-</table>
-<br><br><br>
+<div class="card mb-3 " style="max-width: 100%;  ">
+  <div class="row g-0">
+    <div class="col-md-6 text-center" >
+      <img src="{% static 'images/img.jpg' %}" class="img-fluid rounded-start  mt-4 ms-4" alt="..." style="text-align: center;vertical-align: center"    >
+    </div>
+    <div class="col-md-6">
+      <div class="card-body fthai">
+        <h2 class="card-title" style="color: #0081B4"><b>ประวัติส่วนตัว</b></h2>
+          <h3 class="card-text"><B> <font color="#0d6efd"> > </font>   ชื่อ-สกุล : </B> สุกัญญา ชินคำ </h3>
+          <h3 class="card-text"><B> <font color="#0d6efd"> > </font>   เพศ : </B> หญิง    <b>สัญชาติ : </b>ไทย    <b>ศาสนา :</b> พุทธ  </h3>
+          <h3 class="card-text"><B> <font color="#0d6efd"> > </font>   วันเกิด : </B> วันที่ 13 เดือน กันยายน 2544 </h3>
+          <h3 class="card-text"><B> <font color="#0d6efd"> > </font>   ที่อยู่ : </B> บ้านเลขที่ 24 ม.1 บ้านเชียงพิณ ต.เชียงพิณ &emsp;&emsp;&emsp;  อ.เมืองจ.อุดรธานี 41000 </h3>
+        <h3 class="card-text"><B> <font color="#0d6efd"> > </font>   ช่องทางติดต่อ : </B> </h3>
+          <h3 class="card-text"> Facebook: แอ้นอ้อน อ้อนแอ้น.</h3>
+          <h3 class="card-text"> Line: sukanya_262262</h3>
+            <h3 class="card-text"> Phone: 062-614-4456</h3>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

@@ -1,27 +1,31 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
-<h2 class="text-white align-items-center" ><i class="fa-solid fa-clipboard-list" style="color:black"></i> สิ่งที่สนใจ </h2>
-<table class="table " style="background-color: #F2E5E5">
-<tr>
-<td width="10%">ชื่อ-สกุล :</td>
-<td width="90%">นางสาวสุกัญญา ชินคำ</td>
-</tr>
-<tr>
-<td>ชื่อเล่น :</td>
-<td>อ้อน</td>
-</tr>
+<div class="container-fluid fthai ">
+<div class="row  g-4 b  ">
+     <div class="col">
+         <div class="card  mb-4">
+          <h2 class="card-title ms-4"  style="color: #0081B4"><b>สิ่งที่สนใจ</b></h2>
+             </div>
+     </div>
+</div>
+<div class="card mb-3 text-center">
+  <table class="table table-responsive">
+  <tbody>
     <tr>
-<td>วันเดือนปีเกิด :</td> <td>13 กันยายน พ.ศ.2544</td>
-</tr>
-<tr>
-<td>ที่อยู่ :</td>
-<td>บ้านเลขที่ 24 บ้านเชียนพิณ  จังหวัด อุดรธานี 41000</td>
-</tr>
-<tr>
-<td>เบอร์โทรศัพท์ : </td>
-<td> 062 814 4456</td>
-</tr>
-
+      <th>การท่องเที่ยว :</th>
+      <td><a href="https://travel.trueid.net/detail/Zx6Jab80W3E" target="_blank"><img src="{%  static 'images/in.jpg' %}" class="img  " style="height: auto ; width: 500px " ></a> </td>
+    </tr>
+    <tr>
+      <th>ฟังเพลง :</th>
+      <td><iframe width="560" height="315" src="https://www.youtube.com/embed/Vnt5R20J9sw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+    </tr>
+    <tr>
+      <th>อาหาร : </th>
+        <td><a href="https://www.wongnai.com/listings/steak-restaurants-khonkaen" target="_blank">สเต๊ก</a> </td>
+    </tr>
+  </tbody>
 </table>
-<br><br><br>
+</div>
+    </div>
 {% endblock %}
