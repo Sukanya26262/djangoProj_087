@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <br>
+    <div class="container-fluid bg-white fthai rounded   " >
+    <div class="form-group"></div>
+  <div class="row mt-4" style="max-width: max-content ;">
+    <div class="col align-content-center">
+        <form method="post" >
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+    </div>
+  </div>
+    </div>
+{% endblock %}

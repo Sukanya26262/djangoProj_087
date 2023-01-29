@@ -19,10 +19,8 @@ from django.shortcuts import render
 from djangoProj_087 import views
 
 urlpatterns = [
+    path('', views.home, name="home"),
     path('admin/', admin.site.urls),
     path('ProfileApp/', include('ProfileApp.urls')),
-    path('', views.home, name="home"),
-    path('showMyData', views.showMyData, name='showMyData'),
-    path('showowerProduct',views.showProduct,name='showProduct'),
 ]
 

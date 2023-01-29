@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <br>
+    <div class="container bg-white fthai rounded  " style="max-width: max-content;">
+  <div class="row">
+    <div class="col">
+      <h4 >ข้อมูลสินค้าประเภท : {{ producttypename }} </h4>
+    <h4 > ผู้จัดทำ : {{ organizer }}</h4>
+    <h4 > วันที่เผยแพร่ : {{ date }}</h4>
+    </div>
+    <br>
+      <br>
+    <table class="table table-warning table-striped table-responsive ">
+        <tr>
+            <th>model </th><th>brand </th><th>ram </th><th>ssd </th><th>cpu </th><th>price </th><th>discount </th><th>Vat </th><th>Net </th>
+        </tr>
+
+        {% for Products in lsiOurProduct %}
+            <tr>
+                <td>{{ Products.model }}</td>
+                <td class="text">{{ Products.brand }}</td>
+                <td>{{ Products.ram }}</td>
+                <td>{{ Products.ssd }}</td>
+                <td>{{ Products.cpu }}</td>
+                <td>{{ Products.price }}</td>
+            <td>{{ Products.getDiscount }}</td>
+             <td>{{ Products.getVat }}</td>
+             <td>{{ Products.getNet }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+  </div>
+     <a href="{% url 'inputProduct' %}"><button class="btn btn-success">เพิ่มสินค้าใหม่</button></a>
+    </div>
+{% endblock %}
